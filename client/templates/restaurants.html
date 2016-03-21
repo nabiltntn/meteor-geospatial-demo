@@ -9,13 +9,12 @@
         <ul class="list-reset mxn2">
           {{#each restaurants}}
             <li>{{> restaurant}}</li>
+          {{else}}
+            <p>No restaurants found.</p>
           {{/each}}
         </ul>
       {{else}}
         <p class="italic gray py2">Loading...</p>
-      {{/if}}
-      {{#if listIsEmpty}}
-        <p>No restaurants found.</p>
       {{/if}}
     </div>
   </div>
